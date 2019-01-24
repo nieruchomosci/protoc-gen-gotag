@@ -1,7 +1,7 @@
 package module
 
 import (
-	"github.com/amsokol/protoc-gen-gotag/tagger"
+	"github.com/nieruchomosci/protoc-gen-gotag/tagger"
 	"github.com/fatih/structtag"
 	pgs "github.com/lyft/protoc-gen-star"
 )
