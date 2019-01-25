@@ -75,6 +75,10 @@ func (v retag) Visit(n ast.Node) ast.Visitor {
 	}
 
 	if f, ok := n.(*ast.Field); ok {
+		if len(f.Names) == 0 {
+			return nil
+		}
+		
 		newTags := v.tags[f.Names[0].String()]
 		if newTags == nil {
 			return nil
