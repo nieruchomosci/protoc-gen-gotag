@@ -1,4 +1,4 @@
-syntax = "proto3";
+syntax = "proto2";
 
 package tagger;
 
@@ -9,10 +9,10 @@ option go_package = "github.com/nieruchomosci/protoc-gen-gotag/tagger;tagger";
 // Tags are applied at the field level
 extend google.protobuf.FieldOptions {
     // Multiple Tags can be spcified.
-    string tags = 847939;
+    optional string tags = 847939;
 }
 
 extend google.protobuf.OneofOptions {
     // Multiple Tags can be spcified.
-    string oneof_tags = 847939;
+    optional string oneof_tags = 847939;
 }
